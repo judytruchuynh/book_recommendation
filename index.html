@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Similarity Calculator</title>
+</head>
+<body>
+    <h1>User Similarity Calculator</h1>
+    <form id="userSimilarityForm">
+        <label for="user1">User 1 ID:</label>
+        <input type="text" id="user1" name="user1" required><br>
+        <label for="user2">User 2 ID:</label>
+        <input type="text" id="user2" name="user2" required><br>
+        <label for="method">Method:</label>
+        <select id="method" name="method">
+            <option value="Euclidean">Euclidean</option>
+            <option value="Jaccard">Jaccard</option>
+            <option value="Manhattan">Manhattan</option>
+            <option value="Cosine">Cosine</option>
+            <option value="Pearson">Pearson</option>
+        </select><br>
+        <button type="submit">Calculate Similarity</button>
+    </form>
+    <div id="result"></div>
+    <script src="script.js"></script>
+</body>
+</html>
